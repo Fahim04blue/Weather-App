@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image.jpg) no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        #celsius{
+            display: none;
+        }
+        #country{
+            border-radius: 30px;
+            background-color: orange;
+            color:whitesmoke;
+            padding: 0.2em 0.6em;
+            font-size: 0.6em;
+            display: none;
+        }
+        #error{
+            font-size: 1.5em;
+            color: whitesmoke;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5 ">
+            <div id="input-section" class="input-group mb-3 ">
+                <input id="city-search" type="text" class="form-control" placeholder="Enter a location for Weather ...">
+                <div class="input-group-append">
+                    <button id="submit" type="button" class="btn btn-danger">Search</button>
+                </div>
+               
+            </div>
+            <p id="error"></p>
+        </form>
+        <div class="weather-status text-white text-center">
+            <img id="weather-img" src="" alt="">
+            <h1><span id="city"></span><sup id="country"></sup></h1>
+            <h3 ><span id='temp'></span><sup id='celsius'>&deg;C</sup></h3>
+            <h1 id="description" class="lead"></h1>
+        </div>
+    </div>
+
+    <script src="weather.js"></script>
+
+</body>
+
+</html>
